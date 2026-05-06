@@ -39,7 +39,7 @@ Environmental refractive index produces a **larger resonance shift (~242 nm)** t
 ## Results
 
 ### 1. Size Dependence
-![Size Dependence](New folder/tech report sizes.png)
+![Size Dependence](tech report sizes.png)
 
 - Resonance shifts from **748 nm → 973 nm**  
 - Increase in FWHM with size → higher radiative damping  
@@ -48,7 +48,7 @@ Environmental refractive index produces a **larger resonance shift (~242 nm)** t
 ---
 
 ### 2. Environmental Effect
-![Environment Effect](New folder/tech report size medium.png)
+![Environment Effect](New%20folder/tech report size medium.png)
 
 - Resonance shifts from **866 nm → 1108 nm**  
 - Strong dependence on refractive index  
