@@ -2,95 +2,26 @@
 
 Simulation-based study of plasmon resonance in periodic gold nanostructures, analyzing the effect of size, surrounding medium, and geometry using COMSOL Multiphysics.
 
----
 
-## Key Insight
-Environmental refractive index produces a **larger resonance shift (~242 nm)** than size variation (~225 nm), highlighting strong dielectric sensitivity of plasmonic metasurfaces.
+# 📑 Documentation
+For the full methodology, mathematical interpretations, and detailed results, please refer to the main report:
+*   [Technical_Report.pdf](Technical_Report.pdf)
 
----
+## 🚀 Key Takeaways
+*   **Size Dependence:** Increasing diameter (100–200 nm) leads to a monotonic redshift.
+*   **Environment:** Resonance is highly sensitive to the surrounding refractive index (air vs. water vs. silica)
+*   **Geometry:** Spectral profiles vary significantly between spheres, rings, disks, and blocks.
 
-## Overview
-- System: Periodic array of gold nanostructures (metasurface)  
-- Goal: Study how resonance wavelength changes with:
-  - Element size  
-  - Surrounding medium  
-  - Geometry  
-- Output: Transmittance vs wavelength  
-
----
-
-## Methodology
-- Software: COMSOL Multiphysics (Wave Optics Module)  
-- Boundary Conditions:
-  - Periodic (lateral directions → infinite array behavior)  
-  - Perfectly Matched Layers (PML)  
-- Excitation: Linearly polarized plane wave (normal incidence)  
-
-### Parameters
-- Diameter: 100 nm, 150 nm, 200 nm  
-- Height: 10 nm  
-- Environments:
-  - Air (n = 1.0)  
-  - SiO₂ substrate  
-  - Water (n = 1.33)  
-
----
-
-## Results
-
-### 1. Size Dependence
-![Size Dependence](figures/tech%20report%20sizes.png)
-
-- Resonance shifts from **748 nm → 973 nm**  
-- Increase in FWHM with size → higher radiative damping  
-- Cause: Larger effective electron oscillation length  
-
----
-
-### 2. Environmental Effect
-![Environment Effect](figures/tech%20report%20size%20medium.png)
-
-- Resonance shifts from **866 nm → 1108 nm**  
-- Strong dependence on refractive index  
-- Substrate shows intermediate behavior  
-
----
-
-### 3. Geometry Dependence
-![Geometry Effect](figures/75nm%20air.png)
-
-- Sphere → ~550 nm  
-- Ring → ~690 nm  
-- Disk → ~770 nm  
-- Block → ~860 nm  
-
-- Edge effects and field localization influence resonance  
-
----
-
-## Physics
-Plasmon resonance approximately follows:
-
-Re(εₘ) = −2ε_d  
-
-- Increase in surrounding dielectric constant → redshift  
-- Consistent with classical plasmonic theory  
-
----
-
-## Tools Used
-- COMSOL Multiphysics  
-- Electromagnetic Simulation (Wave Optics)  
-- Plasmonics  
-
+## 🛠 Tools
+*   COMSOL Multiphysics (Wave Optics Module)
+*   Python
 ---
 
 ## Repository Structure## Repository Structure
 ```
 .
 ├── README.md
-├── report/
-│   └── technical_report.pdf
+├── technical_report.pdf
 ├── figures/
 │   ├── size_dependence.png
 │   ├── environment_dependence.png
