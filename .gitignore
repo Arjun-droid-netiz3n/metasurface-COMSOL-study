@@ -1,0 +1,18 @@
+# COMSOL files
+*.mph~
+*.mphbin
+*.log
+*.out
+
+# Temporary / cache files
+*.tmp
+*.cache
+*.bak
+
+# Python cache (if Python scripts are added later)
+__pycache__/
+*.pyc
+
+# OS-generated files
+.DS_Store
+Thumbs.db
